@@ -38,6 +38,7 @@ class Controller_DefaultTemplate extends Controller_Template {
     } else {
       $this->template->title = $this->site_title;
     }
+    View::bind_global('site_title', $this->site_title);
     parent::after();
   }
 

@@ -1,0 +1,25 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+#wrapper{margin:0 10%; background-color:#f6f6ef}
+#header{background-color:#fcaf3e;padding:.2em;color:#000;margin:1em 0 0}
+#header a{color:#000}
+#content{background-color:#f6f6ef; padding:1em}
+.fr{float:right}
+.ar{text-align:right}
+body {color:#828282;font-family:Verdana;font-size:10pt;}
+.cohead, .cohead a{color:#828282; font-size:9pt}
+.comment{padding:.4em}
+.comment, .comment a{color:#000; font-size:9pt}
+textarea {color:#000000;font-family:Courier;font-size:10pt;}
+#cform{padding:1em 0}
+table td{padding:.1em}
+.vote a{color:#828282; text-decoration:none}
+.title span{font-size:8pt}
+.nbody{padding:1em 0}

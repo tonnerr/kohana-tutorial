@@ -1,3 +1,1 @@
-<?php
-?>
-Footer goes here
+<?php ?>
