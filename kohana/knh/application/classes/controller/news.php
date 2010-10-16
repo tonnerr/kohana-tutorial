@@ -1,9 +1,4 @@
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of news
  *
@@ -11,7 +6,16 @@
  */
 class Controller_News extends Controller_DefaultTemplate{
 
+  public function  __construct($request) {
+    parent::__construct($request);
+    /*
+     * Load the news model
+     */
+    $this->news = new Model_News();
+  }
+
   public function action_index(){
+    $this->data['news'] = $this->news->loadFirstPageNews(30);
     $this->render();
   }
 
