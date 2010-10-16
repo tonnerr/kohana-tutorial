@@ -1,8 +1,10 @@
+<div id="header">
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
+echo '<b>'.html::anchor('/', $site_title).'</b> | ';
+echo html::anchor('submit', __('submit')).' | ';
+echo html::anchor('latest', __('latest'));
+echo '<span class="fr">';
+echo html::anchor('#', 'user');
+echo '</span>';
 ?>
-Header goes here
+</div>

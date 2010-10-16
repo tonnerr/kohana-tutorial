@@ -9,15 +9,13 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="header">
 <?php echo View::factory('blocks/header_tpl')->render(); ?>
-    </div>
     <div id="main">
+      <div id="content">
 <?php echo $content ?>
+      </div>
     </div>
-    <div id="footer">
 <?php echo View::factory('blocks/footer_tpl')->render(); ?>
-    </div>
   </div>
 </body>
 </html>
