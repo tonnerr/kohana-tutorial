@@ -1,0 +1,6 @@
+http://yuml.me/diagram/scruffy/class/draw
+# Cool UML Diagram
+[Home (/)]->[Single News (/news/#)]
+[Home (/)]->[What's new (/news/new)]
+[Home (/)]->[User registration (/user/register)]
+[Home (/)]->[User Login (/user/login)]
