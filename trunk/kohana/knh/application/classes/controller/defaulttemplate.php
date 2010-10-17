@@ -19,6 +19,17 @@ class Controller_DefaultTemplate extends Controller_Template {
   public function before() {
     parent::before();
 
+    $auth = Auth::instance();
+    $auth->auto_login();
+    if ($auth->logged_in()){
+      $this->user = Auth::instance()->get_user();
+      $this->username = $this->user->username;
+      View::bind_global('username', $this->username);
+    }
+
+    $this->logged = Auth::instance()->logged_in();
+    View::bind_global('logged', $this->logged);
+
     if($this->auto_render) {
       $this->template->title            = '';
       $this->template->meta_keywords    = '';
