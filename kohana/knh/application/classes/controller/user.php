@@ -12,7 +12,14 @@ class Controller_User extends Controller_DefaultTemplate{
   }
 
   public function action_index(){
-
+    if (!$this->logged){
+      Request::instance()->redirect('');
+    }
+    $this->data['user_data'] = array(
+      'username' => $this->username,
+      'last_login' => $this->user->last_login,
+      'logins' => $this->user->logins);
+    $this->render();
   }
 
   public function action_login(){
